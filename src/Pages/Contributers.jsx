@@ -1,82 +1,51 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { PiGithubLogoThin } from "react-icons/pi";
-import Clothify from "../assets/clothify-dark.png";
-const Contributors = () => {
-  const [contributors, setContributors] = useState([]);
-  const repoOwner = "poudelsanchit";
-  const repoName = "Ecommerce";
-  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contributors`;
+import React from "react";
+import { AiFillInstagram } from "react-icons/ai";
+import { BsGlobe } from "react-icons/bs";
 
-  useEffect(() => {
-    window.scrollTo({ behavior: "smooth", top: 0, left: 0 });
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(apiUrl);
-        setContributors(response.data);
-      } catch (error) {
-        console.error("Error fetching contributors:", error);
-      }
-    };
+const MyCard = () => {
+  const name = "Subham Das";
+  const instagram = "https://www.instagram.com/subhammdas/";
+  const website = "https://www.subhamdevelopment.netlify.app";
 
-    fetchData();
-  }, [apiUrl]);
-  // console.log(contributors);
   return (
-    <div className="w-full min-h-screen h-full flex justify-center ">
-      <div className="w-full font-roboto flex flex-col items-center gap-4 ">
-        <div className="flex flex-col gap-3">
-          {/* <h2 className="font-semibold text-2xl mt-4">Project Repository:</h2> */}
-          <a
-            href="https://subhamdevelopment.netlify.app"
-            target="_blank"
-            className="flex items-center gap-2 border-2 border-black rounded-lg transition-all w-[24rem] hover:scale-105 mt-4 font-Poppins"
-          >
-            <div className="flex flex-col items-center p-1">
-              <img src={Clothify} alt="" className="w-16
-            " />
-              <h4 className="font-bold text-2xl">Clothify</h4>
-            </div>
-            <p className="text-md">
-              Visit my protfolio website by clicking here and check our more projects.
-            </p>
-            <div className="rounded-r-md h-full bg-button p-2 text-white flex items-center text-3xl border-l-2 border-dark-bg">
-              <PiGithubLogoThin ></PiGithubLogoThin>
-            </div>
-          </a>
-        </div>
-        <div className="font-semibold text-2xl mt-4">Github Contributors:</div>
-        <div className="flex gap-4 flex-wrap w-full justify-center ">
-          {contributors.map((contributor, index) => (
+    <div className="w-full min-h-screen h-full flex justify-center items-center">
+      <div className="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex flex-col items-center p-5">
+          <img
+            className="w-32 h-32 mb-3 rounded-full shadow-lg"
+            src="image2.jpeg"
+            alt="Profile picture"
+          />
+          <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+            {name}
+          </h5>
+          <span className="text-sm text-gray-500 dark:text-gray-400">
+            Subham Development
+          </span>
+          <div className="flex mt-4 space-x-3 md:mt-6">
             <a
-              key={index}
-              href={contributor.html_url}
+              href={instagram}
               target="_blank"
-              className="w-fit min-w-[20rem] h-fit flex justify-between border-2 border-dark-bg rounded-lg font-normal font-Poppins transition-all text-dark-bg hover:scale-105 opacity-90 hover:opacity-100 "
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-gray-500 hover:underline dark:text-gray-400"
             >
-              <div className="flex items-center gap-2 p-2">
-                <img
-                  src={contributor.avatar_url}
-                  alt=""
-                  className=" w-20 rounded-full "
-                />
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-md">{contributor?.login}</h3>
-                  {/* <div className="text-md flex items-center gap-1">
-                    Contributions:
-                    <span className="text-xl text-secondary-text">{contributor.contributions}</span>
-                  </div> */}
-                </div>
-              </div>
-              <div className="rounded-r-md bg-button p-2 text-white flex items-center text-3xl border-l-2 border-dark-bg">
-                <PiGithubLogoThin />
-              </div>
+              <AiFillInstagram className="w-5 h-5 mr-2" />
+              Instagram
             </a>
-          ))}
+            <a
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-gray-500 hover:underline dark:text-gray-400"
+            >
+              <BsGlobe className="w-5 h-5 mr-2" />
+              My protfolio Website for more websites and details.
+            </a>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Contributors;
+export default MyCard;
