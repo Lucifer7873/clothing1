@@ -28,7 +28,7 @@ const Contributors = () => {
         <div className="flex flex-col gap-3">
           {/* <h2 className="font-semibold text-2xl mt-4">Project Repository:</h2> */}
           <a
-            href="https://github.com/poudelsanchit/Clothify"
+            href="https://subhamdevelopment.netlify.app"
             target="_blank"
             className="flex items-center gap-2 border-2 border-black rounded-lg transition-all w-[24rem] hover:scale-105 mt-4 font-Poppins"
           >
@@ -38,11 +38,10 @@ const Contributors = () => {
               <h4 className="font-bold text-2xl">Clothify</h4>
             </div>
             <p className="text-md">
-              Visit this project's github repository and do give it a star if
-              you liked our work.
+              Visit my protfolio website by clicking here and check our more projects.
             </p>
             <div className="rounded-r-md h-full bg-button p-2 text-white flex items-center text-3xl border-l-2 border-dark-bg">
-              <PiGithubLogoThin />
+              <PiGithubLogoThin ></PiGithubLogoThin>
             </div>
           </a>
         </div>
