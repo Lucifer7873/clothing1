@@ -24,7 +24,7 @@ const MyCard = () => {
           </span>
           <div className="flex mt-4 space-x-3 md:mt-6">
             <a
-              href={instagram}
+              href="https://www.instagram.com/subhammdas/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-gray-500 hover:underline dark:text-gray-400"
@@ -33,13 +33,12 @@ const MyCard = () => {
               Instagram
             </a>
             <a
-              href={website}
+              href="https://subhamdevelopment.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-gray-500 hover:underline dark:text-gray-400"
             >
               <BsGlobe className="w-5 h-5 mr-2" />
-              My protfolio Website for more websites and details.
             </a>
           </div>
         </div>
