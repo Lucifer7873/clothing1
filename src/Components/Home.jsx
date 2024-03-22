@@ -22,9 +22,7 @@ function Home() {
 
           
           <p className=" font-Poppins font-medium text-lg mt-5  mb-5 text-secondary-text">
-            Elevate your style with our Nike Products, providing top-notch
-            fashion solutions to meet your every need. Upgrade your look with us
-            today and experience the best in athletic fashion.
+            This is a demo site made by subham development with reference of nike. For such type of websites you can contact us on our email: subhamdevelopment@gmail.com
           </p>
 
           <Stack direction="row" spacing={4} align="center">

@@ -67,7 +67,7 @@ const Billing = ({handleToggle}) => {
                     LOGIN <FaCheck />
                   </div>
                   <div className=" flex flex-col text-black lg:text-sm text-xs font-medium ">
-                    Sanchit Poudel <span>+977-9846905213</span>
+                    Subham Das <span>+91-8637212665</span>
                   </div>
                 </div>
                 <Button
@@ -95,7 +95,7 @@ const Billing = ({handleToggle}) => {
                   Shipping Address <FaCheck />
                   </div>
                   <div className=" flex flex-col text-black lg:text-sm text-xs font-medium ">
-                    <div>Pokhara 30 Shishuwa, Kaski 33800</div>
+                    <div>sectro 8, odisha,India</div>
                   </div>
                 </div>
                 <Button

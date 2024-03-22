@@ -26,7 +26,7 @@ const handleCheckout=()=>{
       <div className="flex lg:flex-row flex-col lg:w-11/12 w-full gap-10  ">
         <div className=" lg:w-8/12 w-full font-Poppins flex flex-col lg:gap-5 gap-1 ">
           <div className="lg:text-3xl text-xl font-medium tracking-tighter p-2 ">
-            Prodcuts
+            Products
           </div>
           <div className="flex flex-col gap-2 w-full p-2 ">
             {cartItems.map((items) => {

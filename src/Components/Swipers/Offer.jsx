@@ -13,7 +13,7 @@ const Offer = () => {
     "Get Your Gear Faster Look for Store Pickup at Checkout >>>",
     "Save Up to 40%",
     "Get Your Gear Faster Look for Store Pickup at Checkout >>>",
-    "Members: Free Shipping on Orders $50+",
+    "Subham Development",
   ];
 
   return (
