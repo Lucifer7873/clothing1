@@ -13,7 +13,7 @@ const MyCard = () => {
         <div className="flex flex-col items-center p-5">
           <img
             className="w-32 h-32 mb-3 rounded-full shadow-lg"
-            src="profilepic.jpg"
+            src={process.env.PUBLIC_URL + "/profilepic.jpg"}
             alt="Profile picture"
           />
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -37,7 +37,7 @@ const MyCard = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-gray-500 hover:underline dark:text-gray-400"
-            >
+            > Website
               <BsGlobe className="w-5 h-5 mr-2" />
             </a>
           </div>
