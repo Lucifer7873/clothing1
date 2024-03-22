@@ -12,7 +12,7 @@ export function Footer() {
         </Link>
       </div>
       <div className="text-sm font-medium text-gray-500 flex flex-col">
-        <div> © 2024 NIKE. All rights reserved.</div>
+        <div> © 2024 Subham Development. All rights reserved.</div>
       </div>
     </div>
   );
