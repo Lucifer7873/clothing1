@@ -13,7 +13,7 @@ const MyCard = () => {
         <div className="flex flex-col items-center p-5">
           <img
             className="w-32 h-32 mb-3 rounded-full shadow-lg"
-            src="image2.jpeg"
+            src="profilepic.jpg"
             alt="Profile picture"
           />
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
